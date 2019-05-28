@@ -1,8 +1,8 @@
 Brief information on working with the program:
-1: Adding of cards (works)
-2: Editing cards (works)
-3: Deletion cards (works)
-4: Printing cards (works)
-5: Searching for cards by parameter(works)
+1: Adding of cards
+2: Editing cards
+3: Deletion cards
+4: Printing cards
+5: Searching for cards by parameter
 6: Sorting information according to the parameter
-7: Exit (works)
+7: Exit
