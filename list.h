@@ -17,15 +17,15 @@ typedef struct LAPTOP{
 }laptops;
 typedef struct LNode {
     int   id;
-    laptops *comp;  /* data area */
-    struct LNode  *next; /* link to next node */
+    laptops *comp;  
+    struct LNode  *next; 
 }Node;
 
 typedef struct LHead {
     int cnt;
     Node *first;
     Node *last;
-}Head; /* datatype for pointer to node */
+}Head; 
 /*-----------Additional functions-----------*/
 char* Choice();
 char* Proverka_vvoda ();
