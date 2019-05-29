@@ -6,7 +6,7 @@
 #define MAXLEN 60
 /* --------Functions for linear single-linked list-------- */
 // -------------------------------------------------------
-Head *MakeHead() /* head initialization */
+Head *MakeHead() 
 {
  Head *ph=NULL;
  ph=(Head*)malloc(sizeof(Head));
@@ -21,7 +21,7 @@ Head *MakeHead() /* head initialization */
 // -------------------------------------------------------
 Node *CreateNode(FILE *df)
 {
- Node *NewNode=NULL; /* pointer to new node */
+ Node *NewNode=NULL; 
  int slen;
  char **s2=NULL;
  char *s1;
@@ -30,29 +30,29 @@ Node *CreateNode(FILE *df)
  s1 = (char*)malloc(MAXLEN*sizeof(char));
  if(NewNode&&s1)
  {
-    NewNode->id = 1; /* setting node ID to 1 */
+    NewNode->id = 1; 
     fgets(s1,MAXLEN,df);
     slen=strlen(s1);
     s1[slen-1]='\0';
     slen=strlen(s1);
-    s2=simple_split(s1,slen,sep);//ïàìÿòü âûäåëÿåòñÿ â ôóíêöèè
+    s2=simple_split(s1,slen,sep);//Ã¯Ã Ã¬Ã¿Ã²Ã¼ Ã¢Ã»Ã¤Ã¥Ã«Ã¿Ã¥Ã²Ã±Ã¿ Ã¢ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¨
     if(s2!=NULL)
     {
         NewNode->comp=struct_fill(s2);
     }
     else puts("Error at data reading!");
     NewNode->comp=struct_fill(s2);
-    NewNode->next = NULL; /* next node is absent */
+    NewNode->next = NULL; 
  }
  free(s1);
  s1=NULL;
- return NewNode; /* return of node address */
+ return NewNode; 
 }
 // -------------------------------------------------------
 // -------------------------------------------------------
 Node *CreateNode2()
 {
- Node *NewNode=NULL; /* pointer to new node */
+ Node *NewNode=NULL;
  int slen, flag;
  char **s2=NULL;
  char *s1;
@@ -61,12 +61,12 @@ Node *CreateNode2()
  s1 = (char*)malloc(MAXLEN*sizeof(char));
  if(NewNode&&s1)
  {
-    NewNode->id = 1; /* setting node ID to 1 */
+    NewNode->id = 1; 
     fgets(s1,MAXLEN,stdin);
     slen=strlen(s1);
     s1[slen-1]='\0';
     slen=strlen(s1);
-    s2=simple_split(s1,slen,sep);//ïàìÿòü âûäåëÿåòñÿ â ôóíêöèè
+    s2=simple_split(s1,slen,sep);//Ã¯Ã Ã¬Ã¿Ã²Ã¼ Ã¢Ã»Ã¤Ã¥Ã«Ã¿Ã¥Ã²Ã±Ã¿ Ã¢ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¨
     if(s2!=NULL)
     {
         proverka_str();
@@ -74,11 +74,11 @@ Node *CreateNode2()
     }
     else puts("Error at data reading!");
     NewNode->comp=struct_fill(s2);
-    NewNode->next = NULL; /* next node is absent */
+    NewNode->next = NULL; 
  }
  free(s1);
  s1=NULL;
- return NewNode; /* return of node address */
+ return NewNode; 
 }
 // -------------------------------------------------------
 void AddFirst(Head *MyHead, Node *NewNode)
@@ -365,4 +365,4 @@ float spar2(Node*q)
 /* -----------------------------------------------------*/
 
 /*----------------The end of this part-----------------*/
-//apple;macbook;2;8;3.0;0.92;1.3;28.0;19.7
+
