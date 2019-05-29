@@ -69,7 +69,6 @@ Node *CreateNode2()
     s2=simple_split(s1,slen,sep);//ïàìÿòü âûäåëÿåòñÿ â ôóíêöèè
     if(s2!=NULL)
     {
-        proverka_str();
         NewNode->comp=struct_fill(s2);
     }
     else puts("Error at data reading!");
