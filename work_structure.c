@@ -27,15 +27,6 @@ char* Proverka_vvoda ()
     }
     return choice;
 }
-// -------------------------------------------------------
-int proverka_str (char *str)
-{
-    int flag=0;
-    while (flag==0)
-    {
-
-    }
-}
 int count_str (FILE *df)
 {
     int num=0;
